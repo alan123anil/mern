@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Management Dashboard</title>
+  <link rel="stylesheet" href="seven.css">
+</head>
+<body>
+  <!-- Dashboard Layout -->
+  <div class="dashboard">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">TaskMaster</div>
+      <div class="header-right">
+        <input type="text" class="search-bar" placeholder="Search tasks...">
+        <div class="profile-menu">
+          <img src="download (8).jpg" alt="Profile" class="profile-img">
+          <div class="profile-dropdown">
+            <a href="#">Profile</a>
+            <a href="#">Settings</a>
+            <a href="#">Logout</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <!-- Sidebar -->
+    <nav class="sidebar">
+      <ul class="nav-links">
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Tasks</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </nav>
+    
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="task-cards">
+        <!-- Example Task Cards -->
+        <div class="task-card">
+          <h3 class="task-title">Task 1</h3>
+          <p class="task-desc">This is the description of the task.</p>
+          <div class="task-actions">
+            <button class="edit-btn">Edit</button>
+            <button class="delete-btn">Delete</button>
+          </div>
+        </div>
+        <div class="task-card">
+          <h3 class="task-title">Task 2</h3>
+          <p class="task-desc">This is the description of the task.</p>
+          <div class="task-actions">
+            <button class="edit-btn">Edit</button>
+            <button class="delete-btn">Delete</button>
+          </div>
+        </div>
+        <!-- Add more task cards as needed -->
+      </div>
+    </main>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

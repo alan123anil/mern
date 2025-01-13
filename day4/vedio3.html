@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Controls</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    video {
+      width: 80%;
+      max-width: 800px;
+      margin-bottom: 20px;
+    }
+    button {
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Video Player with Custom Controls</h1>
+  <video id="video" controls>
+    <source src="https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/S9E7vQXo9l59qs7ny/videoblocks-178z_615_dozh_03_rjnasembkj__321d93c9a226bc487e0f70480868ae45__P360.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div>
+    <button id="playPause">Play</button>
+    <button id="forward">Forward 10s</button>
+    <button id="backward">Backward 10s</button>
+  </div>
+
+  <script>
+    const video = document.getElementById('video');
+    const playPauseBtn = document.getElementById('playPause');
+    const forwardBtn = document.getElementById('forward');
+    const backwardBtn = document.getElementById('backward');
+
+    // Play and Pause functionality
+    playPauseBtn.addEventListener('click', () => {
+      if (video.paused) {
+        video.play();
+        playPauseBtn.textContent = 'Pause';
+      } else {
+        video.pause();
+        playPauseBtn.textContent = 'Play';
+      }
+    });
+
+    // Forward 10 seconds
+    forwardBtn.addEventListener('click', () => {
+      video.currentTime += 10;
+    });
+
+    // Backward 10 seconds
+    backwardBtn.addEventListener('click', () => {
+      video.currentTime -= 10;
+    });
+  </script>
+</body>
+</html>

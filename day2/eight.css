@@ -1,0 +1,123 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .registration-container {
+    width: 400px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .registration-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus {
+    border-color: #007BFF;
+  }
+  
+  input:invalid {
+    border-color: #e74c3c;
+    animation: shake 0.3s;
+  }
+  
+  input:valid {
+    border-color: #2ecc71;
+  }
+  
+  .error-message {
+    font-size: 12px;
+    color: #e74c3c;
+    margin-top: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  input:invalid + .error-message {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /* Password Strength */
+  .password-strength {
+    width: 100%;
+    height: 5px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    margin: 10px 0;
+    overflow: hidden;
+  }
+  
+  .strength-bar {
+    height: 100%;
+    width: 0;
+    background-color: red;
+    transition: width 0.3s ease, background-color 0.3s ease;
+  }
+  
+  /* Button */
+  .submit-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Animations */
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-4px); }
+    50% { transform: translateX(4px); }
+    75% { transform: translateX(-4px); }
+  }
+  

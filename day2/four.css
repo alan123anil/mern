@@ -1,0 +1,151 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+}
+
+header .nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header .nav-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+header .search-cart {
+    display: flex;
+    align-items: center;
+}
+
+header .search-cart input {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+header .cart-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Main content layout */
+main {
+    display: flex;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 25%;
+    padding: 10px;
+}
+
+.sidebar form {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar label, .sidebar select, .sidebar input {
+    margin-bottom: 10px;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 75%;
+    padding: 10px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.product h4 {
+    margin: 10px 0;
+}
+
+.product button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Pagination */
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 10px;
+    margin: 5px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        padding: 10px;
+    }
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+    header .search-cart {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

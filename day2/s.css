@@ -1,0 +1,227 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f5f5f5, #e8e8e8);
+    color: #333;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  header .logo {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  header .nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  header .nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  header .nav-menu a:hover {
+    color: #f39c12;
+  }
+  
+  header .search-cart {
+    display: flex;
+    align-items: center;
+  }
+  
+  header .search-cart input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-right: 15px;
+  }
+  
+  header .cart-icon {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Sidebar styles */
+  .sidebar {
+    width: 25%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 20px;
+    transition: width 0.3s ease;
+  }
+  
+  .sidebar.collapsed {
+    width: 0;
+    padding: 0;
+  }
+  
+  .filter-toggle {
+    display: none;
+  }
+  
+  .sidebar h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .sidebar select, .sidebar input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Product Grid */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    width: 75%;
+    padding: 20px;
+    overflow-x: auto;
+  }
+  
+  .product {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .product h4 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .product p {
+    font-size: 16px;
+    color: #888;
+  }
+  
+  .product button {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product button:hover {
+    background-color: #e67e22;
+  }
+  
+  .product img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Pagination */
+  .pagination {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .page-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .page-btn:hover {
+    background-color: #f39c12;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #f39c12;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .product-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .sidebar {
+      width: 50%;
+    }
+  
+    .filter-toggle {
+      display: block;
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      cursor: pointer;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .product-grid {
+      grid-template-columns:
+  

@@ -1,0 +1,76 @@
+/* Style for the body */
+body {
+    display: grid;                          /* Use CSS grid layout */
+    grid-template-columns: repeat(3, 1fr);  /* 3 equal-width columns */
+    gap: 20px;                              /* Adds space between grid items */
+    margin: 0;
+    padding: 0;
+    justify-items: center;                  /* Centers items horizontally */
+    align-items: flex-start;                /* Aligns items at the top */
+}
+
+/* Styling individual image divs */
+div {
+    display: inline-block;
+}
+
+/* Unique borders for each image */
+#image1 {
+    border: 5px solid red;
+    padding: 10px;
+    margin: 10px;
+}
+
+#image2 {
+    border: 5px dashed blue;
+    padding: 10px;
+    margin: 10px;
+}
+
+#image3 {
+    border: 5px dotted green;
+    padding: 10px;
+    margin: 10px;
+}
+
+#image4 {
+    border: 5px double purple;
+    padding: 10px;
+    margin: 10px;
+}
+
+#image5 {
+    border: 5px groove orange;
+    padding: 10px;
+    margin: 10px;
+}
+
+#image6 {
+    border: 5px ridge black;
+    padding: 10px;
+    margin: 10px;
+}
+
+#image7 {
+    border: 5px inset gray;
+    padding: 10px;
+    margin: 10px;
+}
+
+#image8 {
+    border: 5px outset pink;
+    padding: 10px;
+    margin: 10px;
+}
+
+#image9 {
+    border: 5px solid teal;
+    padding: 10px;
+    margin: 10px;
+}
+
+#image10 {
+    border: 5px dashed brown;
+    padding: 10px;
+    margin: 10px;
+}

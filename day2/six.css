@@ -1,0 +1,130 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .pricing-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+  
+  .pricing-toggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .toggle-checkbox {
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  .toggle-label {
+    font-size: 18px;
+  }
+  
+  .toggle-text {
+    font-size: 16px;
+  }
+  
+  /* Pricing Table Styles */
+  .pricing-table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .pricing-card {
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .pricing-card.highlighted {
+    border: 2px solid #007BFF;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.2);
+  }
+  
+  .pricing-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .price {
+    font-size: 32px;
+    color: #333;
+    margin: 20px 0;
+  }
+  
+  .price-value {
+    font-weight: bold;
+  }
+  
+  .price-duration {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .features {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .features li {
+    margin: 10px 0;
+  }
+  
+  .cta {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .cta:hover {
+    background-color: #0056b3;
+  }
+  
+  .tooltip {
+    display: none;
+    background-color: rgba(0, 123, 255, 0.9);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+  }
+  
+  .pricing-card.pro:hover .tooltip {
+    display: block;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .pricing-table {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .pricing-table {
+      grid-template-columns: 1fr;
+    }
+  }
+  
